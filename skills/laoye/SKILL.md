@@ -14,14 +14,14 @@ description: 通过真实掷茭杯抽取玉帝二十八签来回答用户问题�
 每次触发此 skill 时，先运行：
 
 ```bash
-python3 ../../jiaobei.py
+python3 ./jiaobei.py
 ```
 
 该脚本会：
 
 - 先判一次极低概率的立杯；
 - 若不是立杯，则掷三次茭杯；
-- 从 `../../yudi_lingqian_all_28.json` 中取出对应的玉帝二十八签；
+- 从 `./yudi_lingqian_all_28.json` 中取出对应的玉帝二十八签；
 - 输出完整签文内容。
 
 你不得跳过这一步，也不要改成语义判签。
