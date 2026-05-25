@@ -4,7 +4,9 @@ from pathlib import Path
 
 
 STANDING_CUP_PROBABILITY = 0.0015
-DATA_FILE = Path(__file__).with_name("yudi_lingqian_all_28.json")
+SCRIPT_DIR = Path(__file__).resolve().parent
+SKILL_DIR = SCRIPT_DIR.parent
+DATA_FILE = SKILL_DIR / "data" / "yudi_lingqian_all_28.json"
 
 SINGLE_CUP_NAMES = {
     (0, 0): "阴杯",
